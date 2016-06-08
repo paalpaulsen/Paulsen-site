@@ -12,28 +12,27 @@
 
       @include breakpoint(medium) {
         @include grid-column(2);
-        text-align: right;
+        text-align: left;
       }
 }
 
 
 .menu {
-      @include breakpoint(small) {
-          @include grid-column(12);
-          font-size: rem-calc(20);
-          display: table;
-          padding: rem-calc(5);
-              a {
-                color: #333
-              }
+          @include breakpoint(small) {
+              @include grid-column(12);
+              font-size: rem-calc(20);
+              display: table;
+              padding-top: rem-calc(30);
+                  a {
+                    color: #333
+                    }
+            }
 
-      }
-
-      @include breakpoint(medium) {
-          @include grid-column(10);
-          font-size: rem-calc(24);
-          display: block;
-        }
+          @include breakpoint(medium) {
+              @include grid-column(10);
+              font-size: rem-calc(24);
+              display: block;
+            }
       }
 }
 
@@ -132,6 +131,107 @@
             }
     }
 }
+
+.article-wrapper {
+  @include grid-row();
+  padding-top: rem-calc(20);
+  padding-bottom: rem-calc(20);
+
+      h1 {
+        margin-left: rem-calc(20);
+        margin-right: rem-calc(20);
+          @include breakpoint(small) { font-size: rem-calc(28); }
+          @include breakpoint(medium) { font-size: rem-calc(36); }
+          @include breakpoint(large) { font-size: rem-calc(72); }
+          @include grid-column(12);
+          }
+
+      h2 {
+
+        color: #999999;
+        margin-bottom: rem-calc(30);
+        margin-left: rem-calc(20);
+        margin-right: rem-calc(20);
+          @include breakpoint(small) { font-size: rem-calc(24); }
+          @include breakpoint(medium) { font-size: rem-calc(28); }
+          @include breakpoint(large) { font-size: rem-calc(36); }
+          @include grid-column(12);
+          }
+
+
+
+.article-text {
+
+                p {
+                  color: #666666;
+                  margin-left: rem-calc(20);
+                  margin-right: rem-calc(20);
+                  @include breakpoint(small) { font-size: rem-calc(16); }
+                  @include breakpoint(medium) { font-size: rem-calc(20); }
+                  @include breakpoint(large) { font-size: rem-calc(24); }
+                  @include grid-column(10);
+                  }
+            }
+
+}
+
+
+.article-image {
+  padding-top: rem-calc(10);
+  padding-bottom: rem-calc(10);
+  @include grid-row();
+
+  .article-image-element {
+
+    @include grid-column(12);
+    position: relative;
+    margin-bottom: rem-calc(20);
+
+      img {
+        min-height: rem-calc(300);
+        object-fit: cover;
+      }
+
+          .article-image-overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding-left: rem-calc(10);
+          padding-right: rem-calc(20);
+          padding-bottom: rem-calc(20);
+
+              h2 {
+                color: #fff;
+                @include breakpoint(small) { font-size: rem-calc(22); }
+                @include breakpoint(medium) { font-size: rem-calc(28); }
+                @include breakpoint(large) { font-size: rem-calc(32); }
+                }
+
+              h3 {
+                color: #fff;
+                padding-right: rem-calc(20);
+                @include breakpoint(small) { font-size: rem-calc(20); }
+                @include breakpoint(medium) { font-size: rem-calc(24); }
+                @include breakpoint(large) { font-size: rem-calc(28); }
+
+
+              }
+
+          }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .footer {
