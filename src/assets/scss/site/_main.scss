@@ -4,37 +4,28 @@
   padding-bottom: rem-calc(20);
 
 
-.logo {
-      @include breakpoint(small) {
-        @include grid-column(12);
-        text-align: center;
-      }
-
-      @include breakpoint(medium) {
-        @include grid-column(2);
-        text-align: left;
-      }
-}
-
-
-.menu {
-          @include breakpoint(small) {
+    .menu {
+              @include breakpoint(small) {
               @include grid-column(12);
               font-size: rem-calc(20);
-              display: table;
+              display: block;
+              float:none;
+              text-align: left;
               padding-top: rem-calc(30);
                   a {
                     color: #333
                     }
-            }
+              }
 
-          @include breakpoint(medium) {
-              @include grid-column(10);
+              @include breakpoint(medium) {
+              @include grid-column(12);
               font-size: rem-calc(24);
               display: block;
-            }
+              text-align: left;
+              }
       }
 }
+
 
 
 .fade {
@@ -147,7 +138,7 @@
 
 .article-wrapper {
   @include grid-row();
-  @include grid-column(11);
+  @include grid-column(12);
   padding-top: rem-calc(20);
   padding-bottom: rem-calc(20);
 
@@ -157,7 +148,7 @@
           @include breakpoint(small) { font-size: rem-calc(36); }
           @include breakpoint(medium) { font-size: rem-calc(48); }
           @include breakpoint(large) { font-size: rem-calc(72); }
-          @include grid-column(12);
+          @include grid-column(11);
           }
 
       h2 {
@@ -169,7 +160,7 @@
           @include breakpoint(small) { font-size: rem-calc(24); }
           @include breakpoint(medium) { font-size: rem-calc(28); }
           @include breakpoint(large) { font-size: rem-calc(36); }
-          @include grid-column(12);
+          @include grid-column(11);
           }
 
 
@@ -236,46 +227,46 @@
 
 .footer {
   @include grid-row();
-  padding-top: rem-calc(10);
+  padding-top: rem-calc(30);
   padding-bottom: rem-calc(10);
+  text-align: center;
 
 
       .footer-contact-element {
 
-          @include breakpoint(small) {
-          @include grid-column(6);
+          @include breakpoint(small)
+          @include grid-column(12);
           margin-bottom: rem-calc(20);
               h4 {
-                color: #333;
+                color: #999;
                 font-size: rem-calc(16);
               }
-          }
 
-          @include breakpoint(medium) {
-          @include grid-column(6);
+
+          @include grid-row();
+          @include breakpoint(medium)
+          @include grid-column(12);
           margin-bottom: rem-calc(20);
               h4 {
-                color: #333;
+                color: #999;
                 font-size: rem-calc(20);
               }
 
           }
 
 
-    }
 
     .footer-social-element {
 
-      text-align: right;
 
-          @include breakpoint(small) {
-          @include grid-column(6);
+          @include breakpoint(small)
+          @include grid-column(12);
           margin-bottom: rem-calc(16);
-          }
 
-          @include breakpoint(medium) {
-          @include grid-column(6);
+
+          @include grid-row();
+          @include breakpoint(medium)
+          @include grid-column(12);
           margin-bottom: rem-calc(18);
           }
-      }
 }
