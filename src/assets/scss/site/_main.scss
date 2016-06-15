@@ -63,24 +63,24 @@
           position: absolute;
           bottom: 0;
           left: 0;
-          width: 90%;
+          width: 75%;
           padding-left: rem-calc(40);
           padding-bottom: rem-calc(20);
 
               h2 {
                 color: #fff;
                 padding-right: rem-calc(20);
-                @include breakpoint(small) { font-size: rem-calc(22); }
-                @include breakpoint(medium) { font-size: rem-calc(28); }
-                @include breakpoint(large) { font-size: rem-calc(32); }
+                @include breakpoint(small) { font-size: rem-calc(24); }
+                @include breakpoint(medium) { font-size: rem-calc(30); }
+                @include breakpoint(large) { font-size: rem-calc(36); }
                 }
 
               h3 {
                 color: #fff;
                 padding-right: rem-calc(20);
-                @include breakpoint(small) { font-size: rem-calc(20); }
-                @include breakpoint(medium) { font-size: rem-calc(24); }
-                @include breakpoint(large) { font-size: rem-calc(28); }
+                @include breakpoint(small) { font-size: rem-calc(16); }
+                @include breakpoint(medium) { font-size: rem-calc(20); }
+                @include breakpoint(large) { font-size: rem-calc(24); }
 
 
               }
@@ -113,7 +113,7 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 90%;
+            width: 75%;
             padding-left: rem-calc(40);
             padding-bottom: rem-calc(20);
 
@@ -129,9 +129,9 @@
                   h4 {
                   color: #fff;
                   padding-right: rem-calc(20);
-                  @include breakpoint(small) { font-size: rem-calc(16); }
-                  @include breakpoint(medium) { font-size: rem-calc(18); }
-                  @include breakpoint(large) { font-size: rem-calc(20); }
+                  @include breakpoint(small) { font-size: rem-calc(14); }
+                  @include breakpoint(medium) { font-size: rem-calc(16); }
+                  @include breakpoint(large) { font-size: rem-calc(18); }
 
                 }
             }
