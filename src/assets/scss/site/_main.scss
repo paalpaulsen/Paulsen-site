@@ -43,12 +43,12 @@
 
 
 
-.headline-promo {
+.cases-headline-promo {
   padding-top: rem-calc(10);
   padding-bottom: rem-calc(10);
   @include grid-row();
 
-  .headline-element {
+  .cases-headline-element {
 
     @include grid-column(12);
     position: relative;
@@ -73,6 +73,12 @@
                 @include breakpoint(small) { font-size: rem-calc(24); }
                 @include breakpoint(medium) { font-size: rem-calc(30); }
                 @include breakpoint(large) { font-size: rem-calc(36); }
+
+                    span.highlight {
+                    background-color: $cases;
+                    }
+
+
                 }
 
               h3 {
@@ -81,7 +87,6 @@
                 @include breakpoint(small) { font-size: rem-calc(16); }
                 @include breakpoint(medium) { font-size: rem-calc(20); }
                 @include breakpoint(large) { font-size: rem-calc(24); }
-
 
               }
 
@@ -92,10 +97,10 @@
 
 
 
-.section-promo {
+.blog-section-promo {
   @include grid-row();
 
-  .section-element {
+  .blog-section-element {
 
       @include grid-column(12);
       position: relative;
@@ -124,6 +129,11 @@
                     @include breakpoint(small) { font-size: rem-calc(20); }
                     @include breakpoint(medium) { font-size: rem-calc(22); }
                     @include breakpoint(large) { font-size: rem-calc(24); }
+
+                        span.highlight {
+                        background-color: $blog;
+                        }
+
                     }
 
                   h4 {
@@ -136,7 +146,164 @@
                 }
             }
     }
+
+    .method-section-element {
+
+        @include grid-column(12);
+        position: relative;
+        margin-bottom: rem-calc(20);
+
+
+        @include breakpoint(medium) {
+        @include grid-column(6);
+        position: relative;
+        margin-bottom: rem-calc(20);
+      }
+
+
+            .image-overlay {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 75%;
+              padding-left: rem-calc(40);
+              padding-bottom: rem-calc(20);
+
+                    h3 {
+                      color: #fff;
+                //      background-color: $dark-blue;
+                      padding-right: rem-calc(20);
+                      @include breakpoint(small) { font-size: rem-calc(20); }
+                      @include breakpoint(medium) { font-size: rem-calc(22); }
+                      @include breakpoint(large) { font-size: rem-calc(24); }
+
+                          span.highlight {
+                          background-color: $method;
+                          }
+
+                      }
+
+                    h4 {
+                    color: #fff;
+                    padding-right: rem-calc(20);
+                    @include breakpoint(small) { font-size: rem-calc(14); }
+                    @include breakpoint(medium) { font-size: rem-calc(16); }
+                    @include breakpoint(large) { font-size: rem-calc(18); }
+
+                  }
+              }
+      }
+
+
 }
+
+
+.cases-section-promo {
+  @include grid-row();
+
+  .cases-section-element {
+
+      @include grid-column(12);
+      position: relative;
+      margin-bottom: rem-calc(20);
+
+
+      @include breakpoint(medium) {
+      @include grid-column(6);
+      position: relative;
+      margin-bottom: rem-calc(20);
+    }
+
+
+          .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 75%;
+            padding-left: rem-calc(40);
+            padding-bottom: rem-calc(20);
+
+                  h3 {
+                    color: #fff;
+              //      background-color: $dark-blue;
+                    padding-right: rem-calc(20);
+                    @include breakpoint(small) { font-size: rem-calc(20); }
+                    @include breakpoint(medium) { font-size: rem-calc(22); }
+                    @include breakpoint(large) { font-size: rem-calc(24); }
+
+                        span.highlight {
+                        background-color: $blog;
+                        }
+
+                    }
+
+                  h4 {
+                  color: #fff;
+                  padding-right: rem-calc(20);
+                  @include breakpoint(small) { font-size: rem-calc(14); }
+                  @include breakpoint(medium) { font-size: rem-calc(16); }
+                  @include breakpoint(large) { font-size: rem-calc(18); }
+
+                }
+            }
+    }
+
+    .method-section-element {
+
+        @include grid-column(12);
+        position: relative;
+        margin-bottom: rem-calc(20);
+
+
+        @include breakpoint(medium) {
+        @include grid-column(6);
+        position: relative;
+        margin-bottom: rem-calc(20);
+      }
+
+
+            .image-overlay {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 75%;
+              padding-left: rem-calc(40);
+              padding-bottom: rem-calc(20);
+
+                    h3 {
+                      color: #fff;
+                //      background-color: $dark-blue;
+                      padding-right: rem-calc(20);
+                      @include breakpoint(small) { font-size: rem-calc(20); }
+                      @include breakpoint(medium) { font-size: rem-calc(22); }
+                      @include breakpoint(large) { font-size: rem-calc(24); }
+
+                          span.highlight {
+                          background-color: $method;
+                          }
+
+                      }
+
+                    h4 {
+                    color: #fff;
+                    padding-right: rem-calc(20);
+                    @include breakpoint(small) { font-size: rem-calc(14); }
+                    @include breakpoint(medium) { font-size: rem-calc(16); }
+                    @include breakpoint(large) { font-size: rem-calc(18); }
+
+                  }
+              }
+      }
+
+
+}
+
+
+
+
+
+
+
 
 .article-wrapper {
   @include grid-row();
@@ -182,14 +349,17 @@
 }
 
 
-.article-image {
+.method-article-image {
   @include grid-row();
 
 
-  .article-image-element {
+  .method-article-image-element {
       @include grid-column(12);
       position: relative;
       margin-bottom: rem-calc(20);
+//      border-style: solid;
+//      border-width: rem-calc(5);
+//      border-color: $method;
 
           img {
             min-height: rem-calc(300);
@@ -210,6 +380,12 @@
                     @include breakpoint(small) { font-size: rem-calc(16); }
                     @include breakpoint(medium) { font-size: rem-calc(20); }
                     @include breakpoint(large) { font-size: rem-calc(24); }
+
+                        span.highlight {
+                            background-color: $method;
+                            font-style: italic;
+                        }
+
                     }
 
                   h3 {
