@@ -431,9 +431,25 @@
           }
 
 
+
+      h5 {
+
+          color: $summary;
+          margin-left: rem-calc(20);
+          margin-right: rem-calc(20);
+          margin-bottom: rem-calc(10);
+          @include breakpoint(small) { font-size: rem-calc(14); }
+          @include breakpoint(medium) { font-size: rem-calc(18); }
+          @include breakpoint(large) { font-size: rem-calc(22); }
+          @include grid-column(11);
+
+        }
+
+
+
 .article-text {
 
-                p {
+                 p {
                   color: $bodytext;
                   margin-left: rem-calc(20);
                   margin-right: rem-calc(20);
@@ -442,16 +458,16 @@
                   @include breakpoint(large) { font-size: rem-calc(24); }
                   @include grid-column(10);
                   }
-            }
-
-}
+        }
 
 
-.method-article-image {
-  @include grid-row();
 
 
-  .method-article-image-element {
+.article-image {
+//@include grid-row();
+
+
+  .article-image-element {
       @include grid-column(12);
       position: relative;
       margin-bottom: rem-calc(20);
@@ -478,23 +494,17 @@
                     @include breakpoint(large) { font-size: rem-calc(24); }
 
                         span.highlight {
-                            background-color: $method;
+                            background-color: $caption;
                             font-style: italic;
                         }
 
                     }
 
-                  h3 {
-                    color: $bannertext;
-                    padding-right: rem-calc(20);
-                    @include breakpoint(small) { font-size: rem-calc(20); }
-                    @include breakpoint(medium) { font-size: rem-calc(24); }
-                    @include breakpoint(large) { font-size: rem-calc(28); }
-                    }
-
-              }
-      }
+                }
+          }
+    }
 }
+
 
 
 .footer {
@@ -524,7 +534,7 @@
                 font-size: rem-calc(20);
               }
 
-          }
+      }
 
 
 
@@ -544,5 +554,5 @@
           @include breakpoint(medium)
           @include grid-column(12);
           margin-bottom: rem-calc(18);
-          }
+      }
 }
